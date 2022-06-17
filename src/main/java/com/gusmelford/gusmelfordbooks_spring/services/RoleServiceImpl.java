@@ -13,11 +13,11 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public Role getCustomerRole() {
-        return roleRepository.findByName("CUSTOMER").orElseThrow();
+        return roleRepository.findByName("User").orElseThrow();
     }
 
     @Override
     public Role getAdminRole() {
-        return roleRepository.findByName("ADMIN").orElseThrow();
+        return roleRepository.findByName("Admin").orElseThrow();
     }
 }
