@@ -1,3 +1,4 @@
 FROM openjdk:18-jdk-alpine
-COPY target/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+EXPOSE 8080
+COPY target/gusmelford_books.jar gusmelford_books.jar
+ENTRYPOINT ["java","-jar","/gusmelford_books.jar"]

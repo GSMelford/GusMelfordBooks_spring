@@ -123,6 +123,7 @@
 			</plugin>
 
 		</plugins>
+		<finalName>gusmelford_books</finalName>
 	</build>
 
 </project>
